@@ -1,9 +1,9 @@
 {
-  "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
-  "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "private": false,
+  "displayName": "BigAssFans",
+  "name": "homebridge-bigassfanss",
+  "version": "2.0.0",
+  "description": "Provides automatic discovery and control of BigAssFans",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
   "keywords": [
     "homebridge-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "bigassfans": "^0.1.2"
+  },
   "devDependencies": {
     "@types/node": "^18.16.20",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
