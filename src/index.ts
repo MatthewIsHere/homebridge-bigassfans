@@ -8,4 +8,4 @@ import { BigAssPlatform } from "./platform"
  */
 export = (api: API) => {
   api.registerPlatform(PLATFORM_NAME, BigAssPlatform)
-};
+}

@@ -55,7 +55,7 @@ export class BigAssPlatform implements DynamicPlatformPlugin {
     // EXAMPLE ONLY
     // A real plugin you would discover accessories from the local network, cloud services
     // or a user-defined array in the platform config.
-    
+
     // loop over the discovered devices and register each one if it has not already been registered
     for (const fan of fans) {
 

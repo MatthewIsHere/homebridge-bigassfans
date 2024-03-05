@@ -1,4 +1,4 @@
-import { Service, PlatformAccessory, CharacteristicValue, Characteristic } from "homebridge"
+import { Service, PlatformAccessory } from "homebridge"
 
 import { BigAssPlatform } from "./platform"
 import { BigAssFan } from "bigassfans"
@@ -54,7 +54,7 @@ export class BigAssAccessory {
         this.fanService.getCharacteristic(this.platform.Characteristic.Active)
           .onSet(async value => {
             const c = this.platform.Characteristic.Active
-            let newValue = await fan.fan.mode.set((value === c.ACTIVE) ? OperatingMode.On : OperatingMode.Off)
+            const newValue = await fan.fan.mode.set((value === c.ACTIVE) ? OperatingMode.On : OperatingMode.Off)
             return newValue
           })
           .onGet(async () => {
@@ -64,8 +64,8 @@ export class BigAssAccessory {
 
         this.fanService.getCharacteristic(this.platform.Characteristic.RotationSpeed)
           .onSet(async value => {
-            if (typeof value == "number") {
-              let newValue = await fan.fan.speedPercent.set(Math.round(value))
+            if (typeof value === "number") {
+              const newValue = await fan.fan.speedPercent.set(Math.round(value))
               return newValue
             } else {
               throw new Error("RotationSpeed.onSet parameter is not of type number")
@@ -79,7 +79,7 @@ export class BigAssAccessory {
         this.fanService.getCharacteristic(this.platform.Characteristic.RotationDirection)
           .onSet(async value => {
             const c = this.platform.Characteristic.RotationDirection
-            let newValue = await fan.fan.direction.set((value === c.COUNTER_CLOCKWISE) ? Direction.Forward : Direction.Reverse)
+            const newValue = await fan.fan.direction.set((value === c.COUNTER_CLOCKWISE) ? Direction.Forward : Direction.Reverse)
             return newValue
           })
           .onGet(async () => {

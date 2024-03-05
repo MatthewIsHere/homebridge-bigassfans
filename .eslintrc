@@ -15,7 +15,7 @@
   "rules": {
     "quotes": ["warn", "double"],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
-    "semi": ["on"],
+    "semi": ["error", "never"],
     "comma-dangle": ["warn", "always-multiline"],
     "dot-notation": "off",
     "eqeqeq": "warn",
@@ -32,7 +32,7 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/semi": ["warn"],
+    "@typescript-eslint/semi": ["error", "never"],
     "@typescript-eslint/member-delimiter-style": ["warn"]
   }
 }
