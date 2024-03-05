@@ -13,9 +13,9 @@
     "dist"
   ],
   "rules": {
-    "quotes": ["warn", "single"],
+    "quotes": ["warn", "double"],
     "indent": ["warn", 2, { "SwitchCase": 1 }],
-    "semi": ["off"],
+    "semi": ["on"],
     "comma-dangle": ["warn", "always-multiline"],
     "dot-notation": "off",
     "eqeqeq": "warn",

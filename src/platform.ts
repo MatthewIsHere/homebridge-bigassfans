@@ -51,12 +51,11 @@ export class BigAssPlatform implements DynamicPlatformPlugin {
    * must not be registered again to prevent "duplicate UUID" errors.
    */
   async discoverDevices() {
-    let fans = await BigAssFan.discover()
+    const fans = await BigAssFan.discover()
     // EXAMPLE ONLY
     // A real plugin you would discover accessories from the local network, cloud services
     // or a user-defined array in the platform config.
     
-
     // loop over the discovered devices and register each one if it has not already been registered
     for (const fan of fans) {
 
