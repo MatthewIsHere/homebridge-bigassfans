@@ -27,7 +27,7 @@
     "homebridge-plugin"
   ],
   "dependencies": {
-    "bigassfans": "^0.1.2"
+    "bigassfans": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.20",
