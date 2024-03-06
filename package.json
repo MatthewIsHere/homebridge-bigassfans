@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "BigAssFans",
   "name": "homebridge-bigassfans",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Provides automatic discovery and control of BigAssFans",
   "license": "Apache-2.0",
   "repository": {
