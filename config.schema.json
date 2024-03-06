@@ -2,6 +2,14 @@
   "pluginAlias": "BigAssFans",
   "pluginType": "platform",
   "singular": true,
+  "headerDisplay": "A Homeridge plugin for BigAssFans products",
   "schema": {
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "title": "This box does nothing",
+        "type": "boolean"
+      }
+    }
   }
 }

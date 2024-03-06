@@ -1,7 +1,7 @@
 /**
  * This is the name of the platform that users will use to register the plugin in the Homebridge config.json
  */
-export const PLATFORM_NAME = "BigAssPlatform"
+export const PLATFORM_NAME = "BigAssFans"
 
 /**
  * This must match the name of your plugin as defined the package.json
